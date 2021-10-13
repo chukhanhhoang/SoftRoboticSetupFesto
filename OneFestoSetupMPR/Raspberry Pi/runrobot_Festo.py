@@ -44,7 +44,6 @@ def main(argv):
 
     # exit()
     robot = SoftRobot(i2c=i2c,port=port)
-    robot.addIMU()
     robot.waitForClient() # Can be called many times to connect more clients
     robot.createProcesses() # Initialize all the processes needed for I2C sensors, motors, TCP/IP comm
     robot.run() # Start the processes
