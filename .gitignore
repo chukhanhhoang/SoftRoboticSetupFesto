@@ -1,3 +1,5 @@
 */Simulink/slprj/*
 */Simulink/*.mat
 *.slxc
+*.autosave
+*.pyc
