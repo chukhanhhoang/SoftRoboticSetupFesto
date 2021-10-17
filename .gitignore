@@ -2,8 +2,13 @@
 */Simulink/slprj/*
 */Simulink/*.mat
 *.slxc
+<<<<<<< HEAD
 *.png
 *.fig
 *.autosave
 *.mat
 */slprj/
+=======
+*.autosave
+*.pyc
+>>>>>>> 1171993d024186fbb281b9e142d153429a05d07d
