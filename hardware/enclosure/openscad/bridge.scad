@@ -16,7 +16,8 @@ O = 12; // side hole offset
 D1 = 35;
 D2 = 40;
 
-POWERBUTTON = true;
+POWERBUTTON   = false;
+PRESSUREPORT_1 = true;
 
 //Centerframe(W,R,D,T,H,O,Nm = [],Nb = []);
 //translate([0,0,D1]){Centerframe(W,R,D,T,H,O,Nm = [],Nb = []);}
@@ -45,21 +46,21 @@ union(){
 hull(){
 cylinderOut(0,5);
 cylinderOut(D1,5);
-cylinderOut(D1+D2,5);
+//cylinderOut(D1+D2,5);
 }
 }
 
 union(){
 cylinderOut(0,2.2,H=20,C=true);
 cylinderOut(D1,2.2,H=20,C=true);
-cylinderOut(D1+D2,2.2,H=20,C=true);
+//cylinderOut(D1+D2,2.2,H=20,C=true);
 }
 
 translate([3,0,0]){
 union(){
 cylinderOut(0,3,H=3,C=true);
 cylinderOut(D1,3,H=3,C=true);
-cylinderOut(D1+D2,3,H=3,C=true);
+//cylinderOut(D1+D2,3,H=3,C=true);
 }
 }
 }
@@ -78,5 +79,16 @@ rotate([0,90,0]){
 cylinder(5,8,8,center = true);}}
 
 }}
+
+if (PRESSUREPORT_1){
+
+translate([W/2+R/2,W/2-4.75,28]){ 
+rotate([0,90,0]){
+    difference(){
+cylinder(3,6,6,center = true);
+cylinder(5,2.2,2.2,center = true);}
+}   
+}    
+}
 
 }

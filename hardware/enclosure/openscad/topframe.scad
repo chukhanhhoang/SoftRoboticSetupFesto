@@ -1,7 +1,6 @@
 include <roundsquare.scad>;
 include <baseframe.scad>;
 include <roundsquare.scad>;
-//import("bridge.stl");
 
 $fn=70;
 
@@ -10,7 +9,7 @@ R = 3;    // corner radius base plate
 D = 5;    // thickness of walls
 T = 8;    // thickness bottom plateau
 H = 5;
-O = 12; // side hole offset
+O = 12;   // side hole offset
 
 
 color([0.4,0.4,0.4])

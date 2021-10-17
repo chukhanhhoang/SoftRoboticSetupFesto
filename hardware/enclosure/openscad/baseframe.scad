@@ -1,4 +1,4 @@
-module Centerframe(W,R,D,T,H,O, Nb = [0,1,2,3], Nm = [0,1,2,3], Rm = 2.2){ 
+module Centerframe(W,R,D,T,H,O, Nb = [0,1,2,3], Nm = [0,1,2,3], Rm = 1.5){ 
    
     difference(){
     union(){

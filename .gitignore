@@ -1,3 +1,9 @@
+*/benchmark/OneFesto(125Hz)/slprj/*
 */Simulink/slprj/*
 */Simulink/*.mat
 *.slxc
+*.png
+*.fig
+*.autosave
+*.mat
+*/slprj/

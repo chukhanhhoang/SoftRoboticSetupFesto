@@ -1,5 +1,7 @@
 include <baseframe.scad>;
 include <roundsquare.scad>;
+include <roundsquare.scad>;
+include <buck24v.scad>;
 //include <VEAB.scad>;
 include<powersupply.scad>;                                                                           
 
@@ -10,22 +12,25 @@ R = 3;    // corner radius base plate
 D = 5;    // thickness of walls
 T = 8;    // thickness bottom plateau
 H = 5;
-O = 12;  // side hole offset
+O = 12;   // side hole offset
+Wb = 17;  // buck width
+Lb = 36;  // buck length
+Hb = 7;   // buck height
 
 color([0.4,0.4,0.4])
 render(){
 
-    Centerframe(W,R,D,T,H,O, Nm = [2], Nb = [1,4]);
+    Centerframe(W,R,D,T,H,O, Nm = [], Nb = [1,4]);
     
     translate([0,-10,4*D]){rotate([180,0,0]){
-    powersupply(W);
-        }}
+    //powersupply(W);
+    }}
     
     translate([99/2-50,50,D]){
     rotate([0,-90,90]){
         //cube([25,48,12]);
         }
-   }
+    }
   
 
       translate([-99/2+4.5,-10+82/2-5.5,0]){    
@@ -78,12 +83,10 @@ render(){
    }
    
    
-   
-   
-   
-   
-   
-   
+   translate([0,W/2-O,1.5]){
+   rotate([0,0,90]){
+    buckholder(Wb,Lb,Hb);
+   }}
    
    
    
