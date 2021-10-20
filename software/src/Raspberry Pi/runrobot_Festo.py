@@ -53,7 +53,7 @@ def main(argv):
 
     # exit()
     robot = SoftRobot(i2c=i2c,port=port)
-    robot.addMPR()
+    # robot.addMPR()
     # robot.addIMU()
     print(robot.nSensors," sensor(s) initialized")
     robot.waitForClient() # Can be called many times to connect more clients

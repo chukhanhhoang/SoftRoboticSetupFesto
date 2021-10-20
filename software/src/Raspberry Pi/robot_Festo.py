@@ -38,7 +38,7 @@ class VeabSensor(baseSensor):
         return self.instance.voltage*3
 
 class SoftRobot(baseSoftRobot):
-    def __init__(self,i2c=[5],sensorFreq = 125,motorFreq = 125,port = 8888):
+    def __init__(self,i2c=[5],sensorFreq = 250,motorFreq = 250,port = 8888):
         self.IMUadded = False
         self.port = port
         self.nSensors = len(i2c)
@@ -114,6 +114,7 @@ class SoftRobot(baseSoftRobot):
         self.sensorsValues = multiprocessing.Array('d',[0.0]*(self.nSensors+3))
         self.nSensors = self.nSensors+1
         super().__init__(self.nSensors, self.port)
+        self.nSensorsToRead = self.nSensors - 1
         self.processes.append(multiprocessing.Process(target=self.readIMU))
 
     def readSensors(self,index):
