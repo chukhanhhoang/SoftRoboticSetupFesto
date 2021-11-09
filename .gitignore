@@ -3,7 +3,6 @@
 */Simulink/slprj/*
 */Simulink/*.mat
 *.slxc
-*.png
 *.fig
 *.autosave
 *.mat
