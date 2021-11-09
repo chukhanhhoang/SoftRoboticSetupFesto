@@ -1,16 +1,20 @@
 # Hardware
 
 ## Reproduction of Raspberry Pi Controller Hat
+In the following documentation, we will show how to reproduce the VEAB controller hat (see below) step-by-step. This board can be produced by hand, but a better and easier alternative is to order it from a PCB manufacturer. 
+
+![Alt text](img/0_board.png?raw=true "VEAB controller hat")
+
 
 ### Step 1: Choosing a PCB manufacturer
 There exist a couple of options for suitable PCB manufacturers. One we can recommend is JLCPCB located in Shenzhen, China. There website can be found at [https://jlcpcb.com](https://jlcpcb.com/)
 The manufacturing files of the PCB board comply with this manufacturer. For the following steps, its easier to make an account with the PCB manufacturer.
 
-### Step 1: Adding the gerber files
+### Step 2: Adding the gerber files
 Click on **Order now** (on the top right). Then add the **gerber.zip** under **./hardware/board/assembly/**. 
 ![Alt text](img/1_addgerber.png?raw=true "Adding the gerber.zip")
 
-### Step 2: Setting the PCB options
+### Step 3: Setting the PCB options
 Once the upload is complete, make sure you have "similar" options. **A minimum of ten boards must be selected to comply for SMT manufacturing.* 
 Alternatively, if you wish to solder the boards by hand, the order number does not matter. 
 
@@ -18,7 +22,7 @@ Also make sure you select **Specify a location** under **Remove order number**
 
 ![Alt text](img/2_pcboptions.png?raw=true "PCB options")
 
-### Step 3: Selecting SMT manufacturing
+### Step 4: Selecting SMT manufacturing
 Once you've selected the PCB setting, we can continue with SMT manufacturing. JLCPCB will not only produce the PCBs but also solder the components for us with this option enabled.
  
 Make sure you have the **Top** selected for the component placement, and also have **Added by customers** under **Tooling holes**. 
@@ -29,14 +33,14 @@ Press **Confirm**, and you'll be taken to a new page.
 
 ![Alt text](img/3_smt.png?raw=true "SMT manufacturing option")
 
-### Step 4: Adding the bill-of-materials (BOM) and footprint placement files
+### Step 5: Adding the bill-of-materials (BOM) and footprint placement files
 In order for JLCPCB to assemble the board,they need to know which component are required and where they need to be placed. 
 To do so, they require a bill-of-materials and footprint placement file. These files can again be found under **./hardware/board/assembly/**; 
 **BOM.csv** and **Footprint_position.csv**, respectivly. Add these files, and press **Next**.
 
 ![Alt text](img/4_addBOM_placement.png?raw=true "SMT manufacturing option")
 
-### Step 5 Checking the JLCPCB's parts (in stock)
+### Step 6: Checking the JLCPCB's parts (in stock)
 You'll be greeted with an overview of all the components JLCPCB has in stock. Sometimes, it can happen that these components are not in stock. 
 In most cases, the passive parts like resistors, capacitors, and inductors are in stock; but specialized components like the DACs, ADCs are not.
 If so, there are two options:
@@ -72,7 +76,7 @@ In the next step, we will check the placement of these components is correct.
 
 ![Alt text](img/5_checkstock.png?raw=true "JLCPCB stock")
 
-### Step 6: Checking component placement
+### Step 7: Checking component placement
 The next step is crucial -- the component placement. Although JLCPCB will (sometimes) double check any misplacements, it is better to check the placement yourself to be sure.
 JLCPCB will render the gerber files and the component placement files. Visualizations of bad placements (red boxes) and correct placements (green boxes) are show below.
 **The red dots should match the white dots on the silkscreen.** Here, we can see that the orientation of U2,U3, and U4 are off by 180 degrees. 
@@ -82,7 +86,7 @@ To fix the issue (if they may occur), we can modify the orientation in the **Foo
 
 ![Alt text](img/6_goodplacement.png?raw=true "Placement")
 
-## Step 7: Placing your order
+## Step 8: Placing your order
 
 Once all the orientations are correct, press **Save to Cart** to finalize the order! Its that easy ;)
 
