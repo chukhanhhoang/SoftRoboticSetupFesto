@@ -13,7 +13,7 @@ Comment,Designator,Footprint,LCSC
 "VC","J6","Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical",""
 "A1","JP1,JP2,JP3,JP4","Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm",""
 "J1","JP5,JP6","Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm",""
-"22uH","L1","Inductor_SMD:L_7.3x7.3_H4.5","C158092"
+"22uH","L1","Inductor_SMD:L_7.3x7.3_H4.5","C216197"
 "1k","R1,R4,R8,R9,R10,R12,R13,R14,R25","Resistor_SMD:R_0603_1608Metric","C21190"
 "3k","R7,R11,R15,R16","Resistor_SMD:R_0603_1608Metric","C4211"
 "10k","R17,R18,R19,R20,R23,R24","Resistor_SMD:R_0603_1608Metric","C25804"

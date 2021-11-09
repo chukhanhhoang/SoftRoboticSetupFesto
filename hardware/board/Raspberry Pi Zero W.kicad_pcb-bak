@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 87)
+    (drawings 88)
     (tracks 1031)
     (zones 0)
     (modules 74)
@@ -1307,6 +1307,7 @@
 
   (module squidlogo:oshw (layer B.Cu) (tedit 613A2D7C) (tstamp 613AF65D)
     (at 124.9172 115.0874 180)
+    (attr smd)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
@@ -2326,6 +2327,7 @@
 
   (module squidlogo:logo_squid_small (layer F.Cu) (tedit 6138585F) (tstamp 6138CC63)
     (at 157.099 112.395)
+    (attr smd)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -2618,6 +2620,7 @@
 
   (module squidlogo:logo_squid (layer B.Cu) (tedit 613782D5) (tstamp 6137E0E0)
     (at 140.208 104.013 180)
+    (attr smd)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
@@ -3640,6 +3643,9 @@
       (net 23 SDA))
   )
 
+  (gr_text + (at 126.111 96.139) (layer F.SilkS) (tstamp 618A598C)
+    (effects (font (size 0.75 0.75) (thickness 0.1)) (justify mirror))
+  )
   (gr_text JLCJLCJLCJLC (at 164.338 98.425) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
