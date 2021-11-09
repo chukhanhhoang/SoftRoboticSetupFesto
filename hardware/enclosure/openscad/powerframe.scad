@@ -1,7 +1,6 @@
 include <baseframe.scad>;
 include <roundsquare.scad>;
-include <roundsquare.scad>;
-include <buck24v.scad>;
+//include <buck24v.scad>;
 //include <VEAB.scad>;
 include<powersupply.scad>;                                                                           
 
@@ -18,12 +17,10 @@ Lb = 36;  // buck length
 Hb = 7;   // buck height
 
 color([0.4,0.4,0.4])
-render(){
-
     Centerframe(W,R,D,T,H,O, Nm = [], Nb = [1,4]);
     
     translate([0,-10,4*D]){rotate([180,0,0]){
-    //powersupply(W);
+    color([0.8,0.8,0.8]){powersupply(W);}
     }}
     
     translate([99/2-50,50,D]){
@@ -32,7 +29,6 @@ render(){
         }
     }
   
-
       translate([-99/2+4.5,-10+82/2-5.5,0]){    
        difference(){
        hull(){
@@ -79,15 +75,13 @@ render(){
    translate([55,20,0]){cube([5,20,2*D]);
        translate([-6,10,0]){cylinder(2*D,5,5);}}}
    
-   translate([-6+55-19.5,10+20-18.5,D]){cube([20,20,D]);}
+   translate([-6+55-19.5,10+20-18.5,D]){
+       cube([20,20,D]);}
    }
    
    
    translate([0,W/2-O,1.5]){
    rotate([0,0,90]){
-    buckholder(Wb,Lb,Hb);
+    //buckholder(Wb,Lb,Hb);
    }}
    
-   
-   
-   }

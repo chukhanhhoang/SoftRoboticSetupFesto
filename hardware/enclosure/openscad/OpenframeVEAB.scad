@@ -3,22 +3,22 @@ include <roundsquare.scad>;
 //include <VEAB.scad>;
 include <powersupply.scad>;
 
-$fn=40;
+$fn=20;
 
 W = 125;  // width of base plate
 R = 3;    // corner radius base plate
 D = 5;    // thickness of walls
 T = 8;    // thickness bottom plateau
-H = 5;
-O = 12;  // side hole offset
+H = 5;    // height of base thickness
+O = 12;   // side hole offset
 
 // render the open-frame 
 
-    Centerframe(W,R,D,T,H,O, Nb = [1,4]);
+    Centerframe(W,R,D,T,H,O);
     
     rotate([0,0,90]){
     difference(){
-    VEABholderClip(W,D);
+    //VEABholderClip(W,D);
     
     translate([48.0,-4.5,15]){
     rotate([90,0,90]){
