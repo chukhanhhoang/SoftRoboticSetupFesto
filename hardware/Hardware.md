@@ -7,8 +7,7 @@ In the following documentation, we will show how to reproduce the VEAB controlle
 
 
 ### Step 1: Choosing a PCB manufacturer
-There exist a couple of options for suitable PCB manufacturers. One we can recommend is JLCPCB located in Shenzhen, China. There website can be found at [https://jlcpcb.com](https://jlcpcb.com/)
-The manufacturing files of the PCB board comply with this manufacturer. For the following steps, its easier to make an account with the PCB manufacturer.
+There exist a couple of options for suitable PCB manufacturers. One we can recommend is JLCPCB located in Shenzhen, China. There website can be found at [https://jlcpcb.com](https://jlcpcb.com/). The manufacturing files of the PCB board comply with this manufacturer. For the following steps, its easier to make an account with the PCB manufacturer.
 
 ### Step 2: Adding the gerber files
 Click on **Order now** (on the top right). Then add the **gerber.zip** under **./hardware/board/assembly/**. 
@@ -46,7 +45,7 @@ In most cases, the passive parts like resistors, capacitors, and inductors are i
 If so, there are two options:
 
 - **Option 1:** Find a replacement part that has an identical footprint, value, and property; and replace them in the BOM.csv.
-- **Option 2:** Continue with the order, and JLCPCB will omit these parts from the assembly. This means you have to order the part elsewhere (i.e., Mouser/Franell/Digikey) and hand-solder them.
+- **Option 2:** Continue with the order, and JLCPCB will omit these parts from the assembly. This means you have to order the part elsewhere (i.e., Mouser/Farnell/Digikey) and hand-solder them.
 (only recommended for those with experience in SMD soldering).
 
 Options for the Digital-Analog converter (MCP4725 -- U3, U4):
