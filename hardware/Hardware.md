@@ -1,4 +1,4 @@
-# Reproduction of Raspberry Pi Controller Hat
+# Reproduction of Raspberry Pi VEAB Controller Hat
 In the following documentation, we will show how to reproduce the VEAB controller hat (see below) step-by-step. This board can be produced by hand, but a better and easier alternative is to order it from a PCB manufacturer. 
 
 ![Alt text](img/0_board.png?raw=true "VEAB controller hat")
