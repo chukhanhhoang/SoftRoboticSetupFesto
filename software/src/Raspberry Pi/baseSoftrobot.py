@@ -6,7 +6,7 @@ from ctypes import c_bool
 class baseSoftRobot:
     def __init__(self,nSensors,port):
         self.nSensors = nSensors
-
+        self.nSensorsToRead = self.nSensors
         ## Set up TCP server
         # Set up socket
         host = ''
@@ -76,7 +76,7 @@ class baseSoftRobot:
 
     def createProcesses(self):
         ## Processes to read sensors
-        for i in range(self.nSensors):
+        for i in range(self.nSensorsToRead):
             self.processes.append(multiprocessing.Process(target=self.readSensors, args=(i,)))
 
         ## Process to control the motors
