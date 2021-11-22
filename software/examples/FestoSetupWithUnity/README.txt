@@ -1,6 +1,6 @@
 INSTRUCTIONS FOR RUNNING THE SRC WITH UNITY
 
-To run these examples, a Simulink file AND a Unity project need to be used. For all the Unity projects, please go to this GitHub folder: .
+To run these examples, a Simulink file AND a Unity project need to be used. For all the Unity projects, please go to this GitHub folder: [(https://github.com/FemkevanBeek/SRCwithUnity)].
 
 For all the Unity projects, the same Simulink file, 'mainSimulink_localPi' can be used, which is in the current folder. For each specific use case, some specific settings should be set. Once all the correct settings are selected
 in Unity and in Simulink, the Pi should first be started from command line, then Simulink should be started, and finally Unity should be run. For closing down, first stop Unity and then
