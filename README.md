@@ -1,4 +1,4 @@
-# SoftRoboticSetupFesto
+# A Desktop-sized Platform  for Real-time Control Applications of Pneumatic Soft Robots
  Code for Raspberry Pi and Matlab/Simulink
 
 [1. Reproduction of the VEAB controller RPi hat](../main/hardware/Hardware.md)
