@@ -31,7 +31,7 @@ class SoftRobot(baseSoftRobot):
             self.actuators = self.actuators + board.actuators
         self.nActuators = len(self.actuators)
         self.actuatorsValues = multiprocessing.Array('d',[0.5]*self.nActuators)
-
+        # print(self.actuators)
         ## Call __init__ of the parent class (Set up multi-processes and TCP comm)
         super().__init__(self.nSensors, self.port)
 
@@ -55,7 +55,7 @@ class SoftRobot(baseSoftRobot):
             try:           
                 # print(self.actuatorsValues[:])
                 for i,p in enumerate(range(self.nActuators)):
-                    self.actuators[p].set_value = self.actuatorsValues[i]
+                    self.actuators[p].normalized_value = self.actuatorsValues[i]
                 # print('Control actuators at time ',time.time())
                 time.sleep(self.actuator_period - time.time() * self.actuator_frequency % 1 / self.actuator_frequency)
             except Exception as e:

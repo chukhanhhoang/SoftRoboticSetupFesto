@@ -18,20 +18,22 @@ class VeabSensor(baseSensor):
     def readSensor(self):
         return self.instance.voltage*5
 
-class VeabRegulator:
-    def __init__(self, i2c, addr=(0x60)):
-        self.mcp = adafruit_mcp4725.MCP4725(I2C(i2c),address=addr)
-        if addr == 0x60:
-            self.name = "Actuator 0"
-        else:
-            self.name = "Actuator 1"
+# class VeabRegulator:
+#     def __init__(self, i2c, addr=(0x60)):
+#         self.mcp = adafruit_mcp4725.MCP4725(I2C(i2c),address=addr)
+#         if addr == 0x60:
+#             self.name = "Actuator 0"
+#         else:
+#             self.name = "Actuator 1"
     
-    def set_value(self,value):
-        # print("Setting ", self.name, " to ",value)
-        self.mcp.normalized_value = value
+#     def set_value(self,value):
+#         print("Setting ", self.name, " to ",value)
+#         self.mcp.normalized_value = value
 
 class VEABcontrolboard:
     def __init__(self,i2c):
         ## ADC&DAC pair 0 and 1 addresses: 48&60 and 49&61
+        # self.sensors = [VeabSensor(i2c,addr=0x48),VeabSensor(i2c,addr=0x49)]
+        # self.actuators = [VeabRegulator(i2c, addr=0x60),VeabRegulator(i2c, addr=0x61)]
         self.sensors = [VeabSensor(i2c,addr=0x48),VeabSensor(i2c,addr=0x49)]
-        self.actuators = [VeabRegulator(i2c, addr=0x60),VeabRegulator(i2c, addr=0x61)]
+        self.actuators = [adafruit_mcp4725.MCP4725(I2C(i2c), address=0x60),adafruit_mcp4725.MCP4725(I2C(i2c), address=0x61)]
