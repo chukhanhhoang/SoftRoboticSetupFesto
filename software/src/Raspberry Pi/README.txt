@@ -11,3 +11,18 @@ Channel1VEAB1->Channel1VEAB2->Channel2VEAB1->Channel2VEAB2->....
 The Port is the port that TCP/IP uses (must be the same here and MATLAB/Simulink)
 
 The "datasize" variable must be 2*(No. of VEAB boards)
+
+
+
+The workflow is as following:
+
+To performm an experiment:
+0. Plug in the Pi and the power supply
+1. Connect to the pi: In cmd, type ssh pi@IPaddress, enter password
+2. Enter the directory where the code is located, for example: cd SoRo
+3. Run the python file using the command above
+4. Run the Simulink/Matlab file
+
+After experiments:
+1. Turn off the Pi: sudo poweroff
+2. Unplug all the power supplies
