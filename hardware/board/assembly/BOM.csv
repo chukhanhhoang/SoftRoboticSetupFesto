@@ -1,5 +1,5 @@
 Comment,Designator,Footprint,LCSC
-10uF,"C1,C2",Capacitor_SMD:C_1206_3216Metric,C12891
+22uF,"C1,C2",Capacitor_SMD:C_1206_3216Metric,C12891
 1uF,"C3,C4,C5,C6",Capacitor_SMD:C_0402_1005Metric,C52923
 10uF,"C7,C8",Capacitor_SMD:C_0805_2012Metric,C15850
 40v/3A,D1,Diode_SMD:D_SMA,C22452

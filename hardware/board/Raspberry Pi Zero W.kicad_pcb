@@ -19,17 +19,17 @@
   )
 
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
-    (32 B.Adhes user)
-    (33 F.Adhes user)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
+    (32 B.Adhes user hide)
+    (33 F.Adhes user hide)
     (34 B.Paste user hide)
-    (35 F.Paste user)
-    (36 B.SilkS user)
+    (35 F.Paste user hide)
+    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
-    (40 Dwgs.User user)
+    (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
     (42 Eco1.User user hide)
     (43 Eco2.User user hide)
@@ -7609,12 +7609,12 @@
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 180.848 107.442) (xy 178.308 107.442) (xy 178.308 105.156) (xy 180.848 105.156)
+        (xy 180.848 107.442) (xy 178.562 107.442) (xy 178.562 105.156) (xy 180.848 105.156)
       )
     )
     (filled_polygon
       (pts
-        (xy 180.648001 107.315) (xy 178.435 107.315) (xy 178.435 105.283) (xy 180.648001 105.283)
+        (xy 180.648001 107.315) (xy 178.689 107.315) (xy 178.689 105.283) (xy 180.648001 105.283)
       )
     )
   )
