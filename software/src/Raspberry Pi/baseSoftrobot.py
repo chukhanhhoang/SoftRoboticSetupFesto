@@ -11,7 +11,7 @@ class baseSoftRobot:
         # Set up socket
         host = ''
         server_address = (host, port) 
-        self.buffersize = 8*self.nMotors
+        self.buffersize = 8*self.nActuators
         self.socket_TCP = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket_TCP.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.socket_TCP.bind(server_address)
@@ -59,9 +59,10 @@ class baseSoftRobot:
                 raw = self.clients[0].recv(self.buffersize)
                  # print('Data received')
                 unpackedData = struct.unpack('d'*int(self.buffersize/8),raw)
-                
+                # print(unpackedData)
+
                 for i in range(int(self.buffersize/8)):
-                    self.motorsValues[i]=unpackedData[i]
+                    self.actuatorsValues[i]=unpackedData[i]
             except Exception as e:
                 print('Error in receive: ',e)
                 self.stopFlag.value = True
@@ -79,7 +80,7 @@ class baseSoftRobot:
         for i in range(self.nSensorsToRead):
             self.processes.append(multiprocessing.Process(target=self.readSensors, args=(i,)))
 
-        ## Process to control the motors
+        ## Process to control the actuators
         self.processes.append(multiprocessing.Process(target=self.controlActuators))
 
         ## Processes for TCP/IP comm
