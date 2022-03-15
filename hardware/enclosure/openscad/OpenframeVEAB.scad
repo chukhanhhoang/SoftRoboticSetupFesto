@@ -1,6 +1,6 @@
 include <baseframe.scad>;
 include <roundsquare.scad>;
-//include <VEAB.scad>;
+include <VEAB.scad>;
 include <powersupply.scad>;
 
 $fn=20;
@@ -18,7 +18,7 @@ O = 12;   // side hole offset
     
     rotate([0,0,90]){
     difference(){
-    //VEABholderClip(W,D);
+    VEABholderClip(W,D);
     
     translate([48.0,-4.5,15]){
     rotate([90,0,90]){
@@ -31,10 +31,7 @@ O = 12;   // side hole offset
     }
     }
 
-   
-
-
-    //VEABholder(W,D);
+    VEABholder(W,D);
     
 
 module VEABholder(W,D){
@@ -77,7 +74,7 @@ translate([W/2-O-D+1,-5,D]){
     union(){
     cube([2,10,5*D]);
     translate([-3,0,23]){cube([5,10,4]);}
-    translate([-2,0,0]){cube([15,10,5]);}
+    translate([-9,0,0]){cube([22,10,5]);}
     //translate([-4,0,0]){cube([4.5,2,5]);}
     }
          
