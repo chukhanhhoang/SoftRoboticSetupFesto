@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "Panelization")(type "KiCad")(uri "/home/brandon/Documents/programming/kicad/lib/Panelization.pretty")(options "")(descr ""))
+  (lib (name "Mousebite")(type "KiCad")(uri "/home/brandon/Documents/programming/kicad/lib/Mousebite.pretty")(options "")(descr ""))
+  (lib (name "squidlogo")(type "KiCad")(uri "/home/brandon/Documents/programming/kicad/lib/squidlogo.pretty")(options "")(descr ""))
+  (lib (name "Connector_BarrelJack")(type "KiCad")(uri "/home/brandon/Documents/programming/kicad/lib/Connector_BarrelJack.pretty")(options "")(descr ""))
+)

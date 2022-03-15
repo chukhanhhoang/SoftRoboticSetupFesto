@@ -49,10 +49,9 @@ If so, there are two options:
 Options for the Digital-Analog converter (MCP4725 -- U3, U4):
 - MCP4725A0T-E/CH -- C144198 (recommended)
 - MCP4725A1T-E/CH -- C61423
-- MCP4716A0T-E/CH -- C110057
 - MCP4726A0T-E/CH -- C191581
 
-Options for the Analog-Digital converter (ADS1014 -- U5, U8):
+Options for the Analog-Digital converter (ADS1013 -- U5, U8):
 - ADS1013IDGSR -- C524815 (recommended)
 - ADS1014IDGST -- C132086
 - ADS1114IDGST -- C206016 
