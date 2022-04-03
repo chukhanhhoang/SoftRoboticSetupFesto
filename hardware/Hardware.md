@@ -91,3 +91,21 @@ Once all the orientations are correct, press **Save to Cart** to finalize the or
  
 Hence, production time is **roughly one week!**
 
+# Assemble the setup
+## Required parts:
+- VEAB Controller Hat
+- Raspberry Pi 4
+- I2C extender hat
+- 3D-printed enclosure plates
+- 12V power suply
+- Cables
+  
+## Assembly
+1. Assemble the base and side plates, the Pi with the I2C hat and the power supply
+   ![](img/Assembly/Assembly1.jpg "Step 1")
+1. Fix the VEAB Controller hat on the holding plate
+   ![](img/Assembly/Assembly2.jpg "Step 2")
+1. Slide the holding plate into the designated space, fix the holding board to the side plates
+   ![](img/Assembly/Assembly3.jpg "Step 3")
+2. Enclose the setup with the remaining plates
+   ![](img/Assembly/Assembly4.jpg "Step 4")
