@@ -3,7 +3,11 @@
 
 [1. Reproduction of the VEAB controller RPi hat](../main/hardware/Hardware.md)
 
+# Publication
+Paper presented at the IEEE International Conference on Soft Robotics (RoboSoft), 2022 -- Edinburgh, Scotland.
+Click here: [URL](https://ieeexplore.ieee.org/document/9762137)
 
+[<img src="./paper/img_paper.png" width="200">](https://ieeexplore.ieee.org/document/9762137)
 
 
 # Log changes:
