@@ -4,7 +4,6 @@ Comment,Designator,Footprint,LCSC
 10uF,"C7,C8",Capacitor_SMD:C_0805_2012Metric,C15850
 40v/3A,D1,Diode_SMD:D_SMA,C22452
 PWR,D2,LED_SMD:LED_0603_1608Metric,C72038
-500mA,F1,Fuse:Fuse_1206_3216Metric,C70068
 Raspberry_Pi_2_3,J1,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,
 VB1,J4,Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical,
 VB2,J5,Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical,
