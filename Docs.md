@@ -84,7 +84,7 @@ Before use, the SD card of the Pi must be set up.
     1. **On the host PC**, open a terminal and check the IP address of the ethernet connection using `ifconfig` (for Linux/OSX) or `ipconfig` (Windows). Look for the line `eth0` or `enp5s0` or something similar and note the corresponding IP address (for example `192.168.1.123`). This is the IP address of the host PC.
     1. Find the IP address of the Pi by running `ifconfig` on the Pi's terminal. Look for the IP address with the same leading 3 triple digits (for example `192.168.1.321`). This is the IP address of the Pi. Now the Pi is accessible via SSH on this IP address.
     
-1. In case you do not have a router and need to connect the Pi and the host PC **directly** using an ethernet cable (Skip this step if you have a router)
+1. (**Skip this step if you have a router or if you already established a connection to the Pi**) In case you do not have a router and need to connect the Pi and the host PC **directly** using an ethernet cable 
     1. Configure the Raspberry Pi as a DHCP server (can be done via SSH or with a monitor and a keyboard attached to the Pi)
         1. Make sure the Pi has a working internet connection. Install `dnsmasq` by executing `sudo apt install dnsmasq`
         2. Assign a static IP address to the Pi's Ethernet `eth0` by adding these lines to the file `/etc/dhcpcd.conf`
