@@ -77,6 +77,11 @@ Before use, the SD card of the Pi must be set up.
     1. Enable I2C fast mode: Add the following line to `/boot/config.txt`: 
         ```
         dtparam=i2c_arm=on,i2c_arm_baudrate=400000
+        dtoverlay=i2c7
+        dtoverlay=i2c6
+        dtoverlay=i2c5
+        dtoverlay=i2c4
+        dtoverlay=i2c3
         ```
 1. In case you have a router that connects to the Pi and your host PC
     1. Once powered up, connect the Raspberry pi using the ethernet cable to the router. 
