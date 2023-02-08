@@ -8,7 +8,7 @@ This is the documentation for the soft robotic setup. The robot is powerered wit
   - [Electronic Hardware Assembly](#electronic-hardware-assembly)
   - [Enclosure Assembly](#enclosure-assembly)
 - [Software](#software)
-  - 
+  - [Installation](#installation)
 
 
 - [Software](#software)
